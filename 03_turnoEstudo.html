@@ -12,11 +12,22 @@
     */
 
     //ENTRADA
-
+const turno=prompt("em que turno vc estuda? Responda 'M' para matutino, 'V' para vespertino ou 'N' para noturno ");
     
     //PROCESSAMENTO
+if (turno.toLocaleUpperCase()==="M"){
+    alert ("Bom dia!")
+}
+else if (turno.toLocaleUpperCase()==="V"){
+    alert ("Boa tarde!")
+}
 
-    
+else if (turno.toLocaleUpperCase()==="N"){
+    alert ("Boa noite!")
+}
+else{
+    alert ("Valor inválido!")
+}
     //SAÍDA
     
 
