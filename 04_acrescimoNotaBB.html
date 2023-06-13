@@ -6,10 +6,23 @@
     //Esse programa recebe a nota do little brother antes de receber ajuda, e a sua nota depois que o big brother o ajudou, 
     //e retorna o acréscimo que o big brother receberá em sua nota pela ajuda. O acréscimo é de 1/4 da diferença das notas, se for positivo.
     
+    // entrada
+     const antes = parseFloat(prompt(`Nota antes de receber ajuda`));
+     const depois = parseFloat(prompt(`Nota depois de receber ajuda`));
+    
+     // processamento
 
-  
-
+     let acrescimo
+if (depois > antes){
+    const diferença = depois - antes;
+    acrescimo = diferença / 4;
+}
+else {
+    acrescimo =  0;
+}
+    alert(`O acrescimo do big brother é de ${acrescimo}`);
     
     // saída
+
 
 </script>

@@ -5,7 +5,35 @@
     */
 
     //ENTRADA
+    const numero1 = parseFloat(prompt("Digite o primeiro número:"));
+const numero2 = parseFloat(prompt("Digite o segundo número:"));
+const numero3 = parseFloat(prompt("Digite o terceiro número:"));
 
+
+let ordem;
+
+if (numero1 >= numero2 && numero1 >= numero3) {
+  if (numero2 >= numero3) {
+    ordem = `${numero1}, ${numero2}, ${numero3}`;
+  } else {
+    ordem = `${numero1}, ${numero3}, ${numero2}`;
+  }
+} else if (numero2 >= numero1 && numero2 >= numero3) {
+  if (numero1 >= numero3) {
+    ordem = `${numero2}, ${numero1}, ${numero3}`;
+  } else {
+    ordem = `${numero2}, ${numero3}, ${numero1}`;
+  }
+} else {
+  if (numero1 >= numero2) {
+    ordem = `${numero3}, ${numero1}, ${numero2}`;
+  } else {
+    ordem = `${numero3}, ${numero2}, ${numero1}`;
+  }
+}
+
+alert("Ordem decrescente dos números:\n" + ordem);
+</script>
     
     //PROCESSAMENTO
     
