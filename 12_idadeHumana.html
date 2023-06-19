@@ -1,4 +1,5 @@
 <meta charset="UTF-8" />
+<meta charset="UTF-8" />
 <script>
     // idadeHumana - É sabido que os caẽs amadurecem mais rapidamente do que os seres humanos (na verdade, alguns seres humanos parecem nunca amadurecer).
     // Calcule a idade do seu cão, baseada nos seguintes fatores:
@@ -7,11 +8,23 @@
     // - cães grandes: fator 7.
 
     // Entrada
-
+    const idadeCao=Number(prompt("insira a idade do seu cão"));
+    const fator=prompt("insira o fator. Se o seu cão for pequeno, digite 'P'. Se for medio, digite 'M'. E se for 'G'. ");
     
     // Processamento
-
-    
+    let final = 0
+    if (fator == "P"){
+        final = idadeCao*5
+        alert(`${final}`)
+    }
+    if (fator == "M"){
+        final = idadeCao*6
+        alert(`${final}`)
+    }
+    if (fator == "G"){
+        final = idadeCao*7
+        alert(`${final}`)
+    }
     // Saída
 
 </script>

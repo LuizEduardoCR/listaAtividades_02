@@ -7,11 +7,33 @@
         //- acima de 1500: aumento de 5 %
     
     // Entrada
-
+    const preco=Number(prompt("insira o preco do produto para descobrir o preco dele depois do aumento."))
     
     // Processamento
 
-    
-    // Saída
+    let aumento = 0
+    let precofinal = 0
 
+    if (preco<=280){
+        aumento = preco*0.20
+        precofinal = aumento+preco
+
+    }
+    else if (preco<=700){
+        aumento = preco*0.15
+        precofinal = aumento+preco
+
+    }
+    else if (preco<=1500){
+        aumento = preco*0.10
+        precofinal = aumento+preco
+
+    }
+    else if (preco>1500){
+        aumento = preco*0.05
+        precofinal = aumento+preco
+
+    }
+    // Saída
+    alert(`${precofinal}`)
 </script>

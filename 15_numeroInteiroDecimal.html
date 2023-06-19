@@ -6,12 +6,18 @@
     */
 
     //ENTRADA
-
+    const numero = parseFloat(prompt("informe um número"));
 
     //PROCESSAMENTO
+    let tipo = ""
 
-    
+    if (Math.round(numero)==numero){
+        tipo = "inteiro"
+    }
+    else {
+        tipo = "decimal"
+    }
     //SAÍDA
-
+    alert (`esse numero é ${tipo}`)
 
 </script>
